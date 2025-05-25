@@ -306,6 +306,23 @@ namespace BrewNosh
                 {
                     if (pesanan < 16)
                     {
+                        int idProduk = Convert.ToInt32(master_table.CurrentRow.Cells[0].Value);
+                        cmd = new SqlCommand($"SELECT stok FROM Produk WHERE id_produk = {idProduk};", conn);
+                        conn.Open();
+                        int stokSekarang = Convert.ToInt32(cmd.ExecuteScalar());
+                        conn.Close();
+
+                        int jumlahPesan = Convert.ToInt32(jml_barang.Text);
+
+                        // Cek apakah stok cukup
+                        if (stokSekarang < jumlahPesan)
+                        {
+                            MessageBox.Show("Stok produk tidak mencukupi!", "Stok Habis", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return; // Stop proses
+                        }
+                        else
+                        {
+
                         pesanan += 1;
                         add_detail();
                         cmd = new SqlCommand($"SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru};", conn);
@@ -321,6 +338,7 @@ namespace BrewNosh
                         l_hrg.Text += strng_hrg + "\n";
                         updateStock();
                         label_product_name.Text = "";
+                        }
                     }
                     else
                     {
@@ -435,15 +453,7 @@ namespace BrewNosh
             }
         }
 
-        private void master_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void l_kembalian_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -573,14 +583,6 @@ namespace BrewNosh
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (guna2ToggleSwitch1.Checked == true)
-            {
-                
-            }
         }
     }
 }
