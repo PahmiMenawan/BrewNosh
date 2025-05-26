@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.l_kembalian = new System.Windows.Forms.Label();
@@ -71,6 +71,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.t_harga = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.t_jam = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -79,7 +80,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.jml_barang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.master_table)).BeginInit();
@@ -137,7 +137,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1379, 1083);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // l_kembalian
             // 
@@ -159,7 +158,6 @@
             this.label5.Size = new System.Drawing.Size(119, 19);
             this.label5.TabIndex = 41;
             this.label5.Text = "Kembalian :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label2
             // 
@@ -171,7 +169,6 @@
             this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 40;
             this.label2.Text = "Bayar : ";
-            this.label2.Click += new System.EventHandler(this.label2_Click_2);
             // 
             // t_bayar
             // 
@@ -267,7 +264,6 @@
             0,
             0,
             0});
-            this.jml_barang.ValueChanged += new System.EventHandler(this.jml_barang_ValueChanged_1);
             // 
             // pay_btn
             // 
@@ -292,26 +288,26 @@
             this.master_table.AllowUserToDeleteRows = false;
             this.master_table.AllowUserToResizeColumns = false;
             this.master_table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.master_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.master_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.master_table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.master_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.master_table.ColumnHeadersHeight = 20;
             this.master_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.master_table.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.master_table.DefaultCellStyle = dataGridViewCellStyle12;
             this.master_table.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.master_table.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.master_table.Location = new System.Drawing.Point(28, 252);
@@ -364,7 +360,6 @@
             this.label_product_name.Size = new System.Drawing.Size(197, 29);
             this.label_product_name.TabIndex = 27;
             this.label_product_name.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_product_name.Click += new System.EventHandler(this.label_product_name_Click);
             // 
             // t_logout
             // 
@@ -400,7 +395,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 23;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // t_receipt
             // 
@@ -422,7 +416,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(3, 30);
             this.panel11.TabIndex = 9;
-            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // label11
             // 
@@ -434,7 +427,6 @@
             this.label11.Size = new System.Drawing.Size(299, 19);
             this.label11.TabIndex = 21;
             this.label11.Text = "=============================";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // l_hrg
             // 
@@ -445,7 +437,6 @@
             this.l_hrg.Size = new System.Drawing.Size(139, 302);
             this.l_hrg.TabIndex = 20;
             this.l_hrg.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.l_hrg.Click += new System.EventHandler(this.l_hrg_Click);
             // 
             // label9
             // 
@@ -457,7 +448,6 @@
             this.label9.Size = new System.Drawing.Size(303, 69);
             this.label9.TabIndex = 11;
             this.label9.Text = "BrewNosh";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // strk_name
             // 
@@ -468,7 +458,6 @@
             this.strk_name.Name = "strk_name";
             this.strk_name.Size = new System.Drawing.Size(0, 19);
             this.strk_name.TabIndex = 11;
-            this.strk_name.Click += new System.EventHandler(this.strk_name_Click);
             // 
             // pictureBox4
             // 
@@ -479,7 +468,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // t_transaksi
             // 
@@ -502,7 +490,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // panel4
             // 
@@ -511,7 +498,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(3, 30);
             this.panel4.TabIndex = 8;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // t_menu
             // 
@@ -533,7 +519,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1376, 4);
             this.panel10.TabIndex = 9;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // panel9
             // 
@@ -542,7 +527,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(4, 600);
             this.panel9.TabIndex = 11;
-            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // label8
             // 
@@ -554,7 +538,6 @@
             this.label8.Size = new System.Drawing.Size(51, 19);
             this.label8.TabIndex = 14;
             this.label8.Text = "Total";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel7
             // 
@@ -564,7 +547,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(4, 77);
             this.panel7.TabIndex = 9;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // panel8
             // 
@@ -573,7 +555,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(4, 77);
             this.panel8.TabIndex = 10;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // txt_search
             // 
@@ -595,7 +576,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label7
             // 
@@ -607,7 +587,6 @@
             this.label7.Size = new System.Drawing.Size(82, 16);
             this.label7.TabIndex = 12;
             this.label7.Text = "Cari Barang";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel6
             // 
@@ -616,7 +595,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1376, 4);
             this.panel6.TabIndex = 8;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // t_harga
             // 
@@ -628,7 +606,6 @@
             this.t_harga.TabIndex = 11;
             this.t_harga.Text = "Rp.0";
             this.t_harga.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.t_harga.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel2
             // 
@@ -644,7 +621,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1376, 117);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel12.Location = new System.Drawing.Point(985, 10);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(3, 100);
+            this.panel12.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -654,7 +638,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // t_jam
             // 
@@ -666,7 +649,6 @@
             this.t_jam.Size = new System.Drawing.Size(149, 35);
             this.t_jam.TabIndex = 10;
             this.t_jam.Text = "00:00:00";
-            this.t_jam.Click += new System.EventHandler(this.t_jam_Click);
             // 
             // panel5
             // 
@@ -675,7 +657,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(3, 100);
             this.panel5.TabIndex = 7;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label3
             // 
@@ -687,7 +668,6 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "19-5-2025";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -699,7 +679,6 @@
             this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tanggal";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -711,7 +690,6 @@
             this.label1.Size = new System.Drawing.Size(303, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "BrewNosh";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel3
             // 
@@ -721,21 +699,12 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1374, 10);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel12.Location = new System.Drawing.Point(985, 10);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(3, 100);
-            this.panel12.TabIndex = 8;
             // 
             // Dashboard
             // 
