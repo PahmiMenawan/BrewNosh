@@ -201,7 +201,6 @@ namespace BrewNosh
         private void button2_Click(object sender, EventArgs e)
         {
             doomsday_procedure();
-
             load_data();
         }
         // Debug End
@@ -374,6 +373,31 @@ namespace BrewNosh
             {
                 MessageBox.Show("Isi kolom bayar dengan benar!");
             }
+        }
+
+        private void master_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            doomsday_procedure();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            letThereBeLight();
         }
         // Scenario END
     }

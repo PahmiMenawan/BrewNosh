@@ -56,7 +56,6 @@ namespace BrewNosh
             cmd.ExecuteNonQuery();
             conn.Close();
 
-
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Berhasil login!");
