@@ -23,7 +23,7 @@ namespace BrewNosh
 
         }
 
-        SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Kasir;Integrated Security=True;");
+        SqlConnection conn = DatabaseHelper.GetConnection();
         SqlCommand cmd;
         private void Dashboard_Load(object sender, EventArgs e)
         {

@@ -16,10 +16,5 @@ namespace BrewNosh
         {
             InitializeComponent();
         }
-
-        private void insert_btn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
