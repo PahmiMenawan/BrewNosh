@@ -30,18 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminDashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.t_logout = new System.Windows.Forms.Label();
@@ -75,11 +81,9 @@
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.t_id = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.t_nama = new Guna.UI2.WinForms.Guna2TextBox();
             this.t_hrg = new Guna.UI2.WinForms.Guna2TextBox();
             this.t_stok = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_upload = new Guna.UI2.WinForms.Guna2Button();
             this.produkstok_tbl = new Guna.UI2.WinForms.Guna2DataGridView();
             this.update_btn = new Guna.UI2.WinForms.Guna2Button();
             this.insert_btn = new Guna.UI2.WinForms.Guna2Button();
@@ -92,6 +96,46 @@
             this.cb_kategori = new Guna.UI2.WinForms.Guna2ComboBox();
             this.produk_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.dashboard_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.transaksi_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.tampil_harga = new System.Windows.Forms.Label();
+            this.labelsb = new System.Windows.Forms.Label();
+            this.labeljml = new System.Windows.Forms.Label();
+            this.labelidp = new System.Windows.Forms.Label();
+            this.labelidt = new System.Windows.Forms.Label();
+            this.labelid = new System.Windows.Forms.Label();
+            this.btn_hps = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_tmbh = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_upd = new Guna.UI2.WinForms.Guna2Button();
+            this.t_sub = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_jml = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_idp = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_idt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_idd = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nama_produk = new System.Windows.Forms.Label();
+            this.t_bayar = new Guna.UI2.WinForms.Guna2TextBox();
+            this.jml_barang = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_tbl_transaksi = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_tbl_detail = new Guna.UI2.WinForms.Guna2Button();
+            this.tbl_on_transaksi = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btn_tbl_produk = new Guna.UI2.WinForms.Guna2Button();
+            this.users_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_admin = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_cashier = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ins = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_edt = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_del = new Guna.UI2.WinForms.Guna2Button();
+            this.tbl_on_users = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btn_upload = new Guna.UI2.WinForms.Guna2Button();
+            this.user_picture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.user_role = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.user_name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.user_pass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.user_id = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,10 +148,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.log)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produkstok_tbl)).BeginInit();
             this.produk_panel.SuspendLayout();
             this.dashboard_panel.SuspendLayout();
+            this.transaksi_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jml_barang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_on_transaksi)).BeginInit();
+            this.users_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_on_users)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -415,17 +464,17 @@
             // 
             this.chart1.BackSecondaryColor = System.Drawing.Color.White;
             this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(20, 236);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(672, 450);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
@@ -537,16 +586,16 @@
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(720, 236);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(300, 450);
             this.chart2.TabIndex = 15;
             this.chart2.Text = "chart2";
@@ -580,17 +629,6 @@
             this.t_id.SelectedText = "";
             this.t_id.Size = new System.Drawing.Size(188, 36);
             this.t_id.TabIndex = 26;
-            this.t_id.TextChanged += new System.EventHandler(this.t_id_TextChanged);
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(384, 40);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(253, 151);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 27;
-            this.pictureBox.TabStop = false;
             // 
             // t_nama
             // 
@@ -610,7 +648,6 @@
             this.t_nama.SelectedText = "";
             this.t_nama.Size = new System.Drawing.Size(188, 36);
             this.t_nama.TabIndex = 28;
-            this.t_nama.TextChanged += new System.EventHandler(this.t_nama_TextChanged);
             // 
             // t_hrg
             // 
@@ -630,7 +667,6 @@
             this.t_hrg.SelectedText = "";
             this.t_hrg.Size = new System.Drawing.Size(188, 36);
             this.t_hrg.TabIndex = 29;
-            this.t_hrg.TextChanged += new System.EventHandler(this.t_hrg_TextChanged);
             // 
             // t_stok
             // 
@@ -650,24 +686,6 @@
             this.t_stok.SelectedText = "";
             this.t_stok.Size = new System.Drawing.Size(188, 36);
             this.t_stok.TabIndex = 30;
-            this.t_stok.TextChanged += new System.EventHandler(this.t_stok_TextChanged);
-            // 
-            // btn_upload
-            // 
-            this.btn_upload.BorderRadius = 10;
-            this.btn_upload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_upload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_upload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_upload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_upload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_upload.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_upload.ForeColor = System.Drawing.Color.White;
-            this.btn_upload.Location = new System.Drawing.Point(384, 197);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.Size = new System.Drawing.Size(253, 36);
-            this.btn_upload.TabIndex = 31;
-            this.btn_upload.Text = "UPLOAD";
-            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
             // 
             // produkstok_tbl
             // 
@@ -786,7 +804,7 @@
             this.btn_clear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_clear.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear.ForeColor = System.Drawing.Color.White;
-            this.btn_clear.Location = new System.Drawing.Point(135, 208);
+            this.btn_clear.Location = new System.Drawing.Point(403, 212);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(188, 25);
             this.btn_clear.TabIndex = 39;
@@ -851,7 +869,7 @@
             this.cb_kategori.Items.AddRange(new object[] {
             "Makanan",
             "Minuman"});
-            this.cb_kategori.Location = new System.Drawing.Point(665, 194);
+            this.cb_kategori.Location = new System.Drawing.Point(403, 103);
             this.cb_kategori.Name = "cb_kategori";
             this.cb_kategori.Size = new System.Drawing.Size(188, 36);
             this.cb_kategori.TabIndex = 44;
@@ -868,13 +886,11 @@
             this.produk_panel.Controls.Add(this.insert_btn);
             this.produk_panel.Controls.Add(this.update_btn);
             this.produk_panel.Controls.Add(this.produkstok_tbl);
-            this.produk_panel.Controls.Add(this.btn_upload);
             this.produk_panel.Controls.Add(this.t_stok);
             this.produk_panel.Controls.Add(this.t_hrg);
             this.produk_panel.Controls.Add(this.t_nama);
-            this.produk_panel.Controls.Add(this.pictureBox);
             this.produk_panel.Controls.Add(this.t_id);
-            this.produk_panel.Location = new System.Drawing.Point(325, 9);
+            this.produk_panel.Location = new System.Drawing.Point(308, 7);
             this.produk_panel.Name = "produk_panel";
             this.produk_panel.Size = new System.Drawing.Size(1033, 748);
             this.produk_panel.TabIndex = 11;
@@ -891,10 +907,785 @@
             this.dashboard_panel.Controls.Add(this.chart2);
             this.dashboard_panel.Controls.Add(this.grafik_btn);
             this.dashboard_panel.Controls.Add(this.guna2Button5);
-            this.dashboard_panel.Location = new System.Drawing.Point(305, 13);
+            this.dashboard_panel.Location = new System.Drawing.Point(307, 7);
             this.dashboard_panel.Name = "dashboard_panel";
             this.dashboard_panel.Size = new System.Drawing.Size(1033, 747);
             this.dashboard_panel.TabIndex = 42;
+            // 
+            // transaksi_panel
+            // 
+            this.transaksi_panel.Controls.Add(this.guna2Button1);
+            this.transaksi_panel.Controls.Add(this.tampil_harga);
+            this.transaksi_panel.Controls.Add(this.labelsb);
+            this.transaksi_panel.Controls.Add(this.labeljml);
+            this.transaksi_panel.Controls.Add(this.labelidp);
+            this.transaksi_panel.Controls.Add(this.labelidt);
+            this.transaksi_panel.Controls.Add(this.labelid);
+            this.transaksi_panel.Controls.Add(this.btn_hps);
+            this.transaksi_panel.Controls.Add(this.btn_tmbh);
+            this.transaksi_panel.Controls.Add(this.btn_upd);
+            this.transaksi_panel.Controls.Add(this.t_sub);
+            this.transaksi_panel.Controls.Add(this.t_jml);
+            this.transaksi_panel.Controls.Add(this.t_idp);
+            this.transaksi_panel.Controls.Add(this.t_idt);
+            this.transaksi_panel.Controls.Add(this.t_idd);
+            this.transaksi_panel.Controls.Add(this.nama_produk);
+            this.transaksi_panel.Controls.Add(this.t_bayar);
+            this.transaksi_panel.Controls.Add(this.jml_barang);
+            this.transaksi_panel.Controls.Add(this.guna2Button7);
+            this.transaksi_panel.Controls.Add(this.guna2Button2);
+            this.transaksi_panel.Controls.Add(this.guna2Button3);
+            this.transaksi_panel.Controls.Add(this.btn_tbl_transaksi);
+            this.transaksi_panel.Controls.Add(this.btn_tbl_detail);
+            this.transaksi_panel.Controls.Add(this.tbl_on_transaksi);
+            this.transaksi_panel.Controls.Add(this.btn_tbl_produk);
+            this.transaksi_panel.Location = new System.Drawing.Point(308, 8);
+            this.transaksi_panel.Name = "transaksi_panel";
+            this.transaksi_panel.Size = new System.Drawing.Size(1020, 748);
+            this.transaksi_panel.TabIndex = 45;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(776, 702);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(141, 26);
+            this.guna2Button1.TabIndex = 25;
+            this.guna2Button1.Text = "clear";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // tampil_harga
+            // 
+            this.tampil_harga.AutoSize = true;
+            this.tampil_harga.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tampil_harga.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.tampil_harga.Location = new System.Drawing.Point(624, 501);
+            this.tampil_harga.Name = "tampil_harga";
+            this.tampil_harga.Size = new System.Drawing.Size(0, 20);
+            this.tampil_harga.TabIndex = 24;
+            // 
+            // labelsb
+            // 
+            this.labelsb.AutoSize = true;
+            this.labelsb.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelsb.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelsb.Location = new System.Drawing.Point(741, 636);
+            this.labelsb.Name = "labelsb";
+            this.labelsb.Size = new System.Drawing.Size(69, 20);
+            this.labelsb.TabIndex = 23;
+            this.labelsb.Text = "subtotal";
+            // 
+            // labeljml
+            // 
+            this.labeljml.AutoSize = true;
+            this.labeljml.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeljml.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labeljml.Location = new System.Drawing.Point(567, 636);
+            this.labeljml.Name = "labeljml";
+            this.labeljml.Size = new System.Drawing.Size(62, 20);
+            this.labeljml.TabIndex = 22;
+            this.labeljml.Text = "jumlah";
+            // 
+            // labelidp
+            // 
+            this.labelidp.AutoSize = true;
+            this.labelidp.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelidp.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelidp.Location = new System.Drawing.Point(395, 636);
+            this.labelidp.Name = "labelidp";
+            this.labelidp.Size = new System.Drawing.Size(85, 20);
+            this.labelidp.TabIndex = 21;
+            this.labelidp.Text = "id produk";
+            // 
+            // labelidt
+            // 
+            this.labelidt.AutoSize = true;
+            this.labelidt.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelidt.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelidt.Location = new System.Drawing.Point(216, 636);
+            this.labelidt.Name = "labelidt";
+            this.labelidt.Size = new System.Drawing.Size(95, 20);
+            this.labelidt.TabIndex = 20;
+            this.labelidt.Text = "id transaksi";
+            // 
+            // labelid
+            // 
+            this.labelid.AutoSize = true;
+            this.labelid.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelid.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelid.Location = new System.Drawing.Point(29, 636);
+            this.labelid.Name = "labelid";
+            this.labelid.Size = new System.Drawing.Size(70, 20);
+            this.labelid.TabIndex = 19;
+            this.labelid.Text = "id detail";
+            // 
+            // btn_hps
+            // 
+            this.btn_hps.BorderRadius = 15;
+            this.btn_hps.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hps.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hps.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_hps.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_hps.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_hps.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hps.ForeColor = System.Drawing.Color.White;
+            this.btn_hps.Location = new System.Drawing.Point(563, 703);
+            this.btn_hps.Name = "btn_hps";
+            this.btn_hps.Size = new System.Drawing.Size(141, 26);
+            this.btn_hps.TabIndex = 18;
+            this.btn_hps.Text = "Hapus";
+            this.btn_hps.Click += new System.EventHandler(this.guna2Button8_Click);
+            // 
+            // btn_tmbh
+            // 
+            this.btn_tmbh.BorderRadius = 15;
+            this.btn_tmbh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tmbh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tmbh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_tmbh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_tmbh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_tmbh.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tmbh.ForeColor = System.Drawing.Color.White;
+            this.btn_tmbh.Location = new System.Drawing.Point(238, 703);
+            this.btn_tmbh.Name = "btn_tmbh";
+            this.btn_tmbh.Size = new System.Drawing.Size(141, 26);
+            this.btn_tmbh.TabIndex = 17;
+            this.btn_tmbh.Text = "Tambah";
+            this.btn_tmbh.Click += new System.EventHandler(this.btn_tmbh_Click);
+            // 
+            // btn_upd
+            // 
+            this.btn_upd.BorderRadius = 15;
+            this.btn_upd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_upd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_upd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_upd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_upd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_upd.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upd.ForeColor = System.Drawing.Color.White;
+            this.btn_upd.Location = new System.Drawing.Point(399, 703);
+            this.btn_upd.Name = "btn_upd";
+            this.btn_upd.Size = new System.Drawing.Size(141, 26);
+            this.btn_upd.TabIndex = 16;
+            this.btn_upd.Text = "Edit";
+            this.btn_upd.Click += new System.EventHandler(this.btn_upd_Click);
+            // 
+            // t_sub
+            // 
+            this.t_sub.BorderRadius = 10;
+            this.t_sub.BorderThickness = 0;
+            this.t_sub.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_sub.DefaultText = "";
+            this.t_sub.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_sub.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_sub.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_sub.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_sub.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_sub.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_sub.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_sub.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_sub.Location = new System.Drawing.Point(745, 659);
+            this.t_sub.Name = "t_sub";
+            this.t_sub.PlaceholderText = "";
+            this.t_sub.SelectedText = "";
+            this.t_sub.Size = new System.Drawing.Size(172, 30);
+            this.t_sub.TabIndex = 15;
+            // 
+            // t_jml
+            // 
+            this.t_jml.BorderRadius = 10;
+            this.t_jml.BorderThickness = 0;
+            this.t_jml.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_jml.DefaultText = "";
+            this.t_jml.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_jml.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_jml.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_jml.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_jml.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_jml.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_jml.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_jml.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_jml.Location = new System.Drawing.Point(567, 659);
+            this.t_jml.Name = "t_jml";
+            this.t_jml.PlaceholderText = "";
+            this.t_jml.SelectedText = "";
+            this.t_jml.Size = new System.Drawing.Size(172, 30);
+            this.t_jml.TabIndex = 14;
+            // 
+            // t_idp
+            // 
+            this.t_idp.BorderRadius = 10;
+            this.t_idp.BorderThickness = 0;
+            this.t_idp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_idp.DefaultText = "";
+            this.t_idp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_idp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_idp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idp.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_idp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_idp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idp.Location = new System.Drawing.Point(389, 659);
+            this.t_idp.Name = "t_idp";
+            this.t_idp.PlaceholderText = "";
+            this.t_idp.SelectedText = "";
+            this.t_idp.Size = new System.Drawing.Size(172, 30);
+            this.t_idp.TabIndex = 13;
+            // 
+            // t_idt
+            // 
+            this.t_idt.BorderRadius = 10;
+            this.t_idt.BorderThickness = 0;
+            this.t_idt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_idt.DefaultText = "";
+            this.t_idt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_idt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_idt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_idt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_idt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idt.Location = new System.Drawing.Point(211, 659);
+            this.t_idt.Name = "t_idt";
+            this.t_idt.PlaceholderText = "";
+            this.t_idt.SelectedText = "";
+            this.t_idt.Size = new System.Drawing.Size(172, 30);
+            this.t_idt.TabIndex = 12;
+            // 
+            // t_idd
+            // 
+            this.t_idd.BorderRadius = 10;
+            this.t_idd.BorderThickness = 0;
+            this.t_idd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_idd.DefaultText = "";
+            this.t_idd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_idd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_idd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_idd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_idd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_idd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_idd.Location = new System.Drawing.Point(33, 659);
+            this.t_idd.Name = "t_idd";
+            this.t_idd.PlaceholderText = "";
+            this.t_idd.SelectedText = "";
+            this.t_idd.Size = new System.Drawing.Size(172, 30);
+            this.t_idd.TabIndex = 11;
+            // 
+            // nama_produk
+            // 
+            this.nama_produk.AutoSize = true;
+            this.nama_produk.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nama_produk.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nama_produk.Location = new System.Drawing.Point(322, 503);
+            this.nama_produk.Name = "nama_produk";
+            this.nama_produk.Size = new System.Drawing.Size(0, 20);
+            this.nama_produk.TabIndex = 9;
+            // 
+            // t_bayar
+            // 
+            this.t_bayar.BorderRadius = 10;
+            this.t_bayar.BorderThickness = 0;
+            this.t_bayar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_bayar.DefaultText = "";
+            this.t_bayar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_bayar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_bayar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_bayar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_bayar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.t_bayar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_bayar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.t_bayar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_bayar.Location = new System.Drawing.Point(618, 524);
+            this.t_bayar.Name = "t_bayar";
+            this.t_bayar.PlaceholderText = "";
+            this.t_bayar.SelectedText = "";
+            this.t_bayar.Size = new System.Drawing.Size(285, 30);
+            this.t_bayar.TabIndex = 8;
+            // 
+            // jml_barang
+            // 
+            this.jml_barang.BackColor = System.Drawing.Color.Transparent;
+            this.jml_barang.BorderRadius = 10;
+            this.jml_barang.BorderThickness = 0;
+            this.jml_barang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.jml_barang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.jml_barang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.jml_barang.ForeColor = System.Drawing.Color.Transparent;
+            this.jml_barang.Location = new System.Drawing.Point(326, 524);
+            this.jml_barang.Name = "jml_barang";
+            this.jml_barang.Size = new System.Drawing.Size(285, 31);
+            this.jml_barang.TabIndex = 7;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.BorderRadius = 15;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button7.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.Location = new System.Drawing.Point(617, 561);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.Size = new System.Drawing.Size(286, 43);
+            this.guna2Button7.TabIndex = 6;
+            this.guna2Button7.Text = "Bayar";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 15;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(325, 561);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(286, 43);
+            this.guna2Button2.TabIndex = 5;
+            this.guna2Button2.Text = "Tambah Produk";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BorderRadius = 15;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(33, 524);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(286, 80);
+            this.guna2Button3.TabIndex = 4;
+            this.guna2Button3.Text = "Tambah Pesanan";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // btn_tbl_transaksi
+            // 
+            this.btn_tbl_transaksi.BorderRadius = 15;
+            this.btn_tbl_transaksi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_transaksi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_transaksi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_tbl_transaksi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_tbl_transaksi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_tbl_transaksi.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tbl_transaksi.ForeColor = System.Drawing.Color.White;
+            this.btn_tbl_transaksi.Location = new System.Drawing.Point(718, 39);
+            this.btn_tbl_transaksi.Name = "btn_tbl_transaksi";
+            this.btn_tbl_transaksi.Size = new System.Drawing.Size(286, 51);
+            this.btn_tbl_transaksi.TabIndex = 3;
+            this.btn_tbl_transaksi.Text = "Transaksi";
+            this.btn_tbl_transaksi.Click += new System.EventHandler(this.btn_tbl_transaksi_Click);
+            // 
+            // btn_tbl_detail
+            // 
+            this.btn_tbl_detail.BorderRadius = 15;
+            this.btn_tbl_detail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_detail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_detail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_tbl_detail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_tbl_detail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_tbl_detail.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tbl_detail.ForeColor = System.Drawing.Color.White;
+            this.btn_tbl_detail.Location = new System.Drawing.Point(369, 39);
+            this.btn_tbl_detail.Name = "btn_tbl_detail";
+            this.btn_tbl_detail.Size = new System.Drawing.Size(286, 51);
+            this.btn_tbl_detail.TabIndex = 2;
+            this.btn_tbl_detail.Text = "Detail Transaksi";
+            this.btn_tbl_detail.Click += new System.EventHandler(this.btn_tbl_detail_Click);
+            // 
+            // tbl_on_transaksi
+            // 
+            this.tbl_on_transaksi.AllowUserToAddRows = false;
+            this.tbl_on_transaksi.AllowUserToDeleteRows = false;
+            this.tbl_on_transaksi.AllowUserToResizeColumns = false;
+            this.tbl_on_transaksi.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.tbl_on_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_on_transaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.tbl_on_transaksi.ColumnHeadersHeight = 20;
+            this.tbl_on_transaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbl_on_transaksi.DefaultCellStyle = dataGridViewCellStyle6;
+            this.tbl_on_transaksi.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.tbl_on_transaksi.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_transaksi.Location = new System.Drawing.Point(33, 105);
+            this.tbl_on_transaksi.Name = "tbl_on_transaksi";
+            this.tbl_on_transaksi.RowHeadersVisible = false;
+            this.tbl_on_transaksi.Size = new System.Drawing.Size(971, 385);
+            this.tbl_on_transaksi.TabIndex = 1;
+            this.tbl_on_transaksi.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_transaksi.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.tbl_on_transaksi.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.tbl_on_transaksi.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.tbl_on_transaksi.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.tbl_on_transaksi.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_transaksi.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.tbl_on_transaksi.ThemeStyle.HeaderStyle.Height = 20;
+            this.tbl_on_transaksi.ThemeStyle.ReadOnly = false;
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.Height = 22;
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_transaksi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tbl_on_transaksi.Click += new System.EventHandler(this.tbl_on_transaksi_Click);
+            // 
+            // btn_tbl_produk
+            // 
+            this.btn_tbl_produk.BorderRadius = 15;
+            this.btn_tbl_produk.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_produk.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_tbl_produk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_tbl_produk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_tbl_produk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_tbl_produk.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_tbl_produk.ForeColor = System.Drawing.Color.White;
+            this.btn_tbl_produk.Location = new System.Drawing.Point(33, 39);
+            this.btn_tbl_produk.Name = "btn_tbl_produk";
+            this.btn_tbl_produk.Size = new System.Drawing.Size(286, 51);
+            this.btn_tbl_produk.TabIndex = 0;
+            this.btn_tbl_produk.Text = "Produk";
+            this.btn_tbl_produk.Click += new System.EventHandler(this.btn_tbl_produk_Click);
+            // 
+            // users_panel
+            // 
+            this.users_panel.Controls.Add(this.btn_admin);
+            this.users_panel.Controls.Add(this.btn_cashier);
+            this.users_panel.Controls.Add(this.guna2Button4);
+            this.users_panel.Controls.Add(this.btn_ins);
+            this.users_panel.Controls.Add(this.btn_edt);
+            this.users_panel.Controls.Add(this.btn_del);
+            this.users_panel.Controls.Add(this.tbl_on_users);
+            this.users_panel.Controls.Add(this.btn_upload);
+            this.users_panel.Controls.Add(this.user_picture);
+            this.users_panel.Controls.Add(this.user_role);
+            this.users_panel.Controls.Add(this.user_name);
+            this.users_panel.Controls.Add(this.user_pass);
+            this.users_panel.Controls.Add(this.user_id);
+            this.users_panel.Location = new System.Drawing.Point(307, 8);
+            this.users_panel.Name = "users_panel";
+            this.users_panel.Size = new System.Drawing.Size(1035, 747);
+            this.users_panel.TabIndex = 46;
+            // 
+            // btn_admin
+            // 
+            this.btn_admin.BorderRadius = 15;
+            this.btn_admin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_admin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_admin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_admin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_admin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_admin.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_admin.ForeColor = System.Drawing.Color.White;
+            this.btn_admin.Location = new System.Drawing.Point(201, 256);
+            this.btn_admin.Name = "btn_admin";
+            this.btn_admin.Size = new System.Drawing.Size(173, 32);
+            this.btn_admin.TabIndex = 12;
+            this.btn_admin.Text = "Admin";
+            this.btn_admin.Click += new System.EventHandler(this.btn_admin_Click);
+            // 
+            // btn_cashier
+            // 
+            this.btn_cashier.BorderRadius = 15;
+            this.btn_cashier.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cashier.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_cashier.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_cashier.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_cashier.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_cashier.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cashier.ForeColor = System.Drawing.Color.White;
+            this.btn_cashier.Location = new System.Drawing.Point(22, 256);
+            this.btn_cashier.Name = "btn_cashier";
+            this.btn_cashier.Size = new System.Drawing.Size(173, 32);
+            this.btn_cashier.TabIndex = 11;
+            this.btn_cashier.Text = "Cashier";
+            this.btn_cashier.Click += new System.EventHandler(this.btn_cashier_Click);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderRadius = 15;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Location = new System.Drawing.Point(526, 204);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(173, 32);
+            this.guna2Button4.TabIndex = 10;
+            this.guna2Button4.Text = "Clear";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
+            // btn_ins
+            // 
+            this.btn_ins.BorderRadius = 15;
+            this.btn_ins.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ins.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ins.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ins.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ins.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_ins.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ins.ForeColor = System.Drawing.Color.White;
+            this.btn_ins.Location = new System.Drawing.Point(702, 694);
+            this.btn_ins.Name = "btn_ins";
+            this.btn_ins.Size = new System.Drawing.Size(319, 50);
+            this.btn_ins.TabIndex = 9;
+            this.btn_ins.Text = "TAMBAH";
+            this.btn_ins.Click += new System.EventHandler(this.btn_ins_Click);
+            // 
+            // btn_edt
+            // 
+            this.btn_edt.BorderRadius = 15;
+            this.btn_edt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_edt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_edt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_edt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_edt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_edt.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edt.ForeColor = System.Drawing.Color.White;
+            this.btn_edt.Location = new System.Drawing.Point(367, 694);
+            this.btn_edt.Name = "btn_edt";
+            this.btn_edt.Size = new System.Drawing.Size(319, 50);
+            this.btn_edt.TabIndex = 8;
+            this.btn_edt.Text = "EDIT";
+            this.btn_edt.Click += new System.EventHandler(this.btn_edt_Click);
+            // 
+            // btn_del
+            // 
+            this.btn_del.BorderRadius = 15;
+            this.btn_del.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_del.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_del.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_del.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_del.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_del.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_del.ForeColor = System.Drawing.Color.White;
+            this.btn_del.Location = new System.Drawing.Point(22, 694);
+            this.btn_del.Name = "btn_del";
+            this.btn_del.Size = new System.Drawing.Size(319, 50);
+            this.btn_del.TabIndex = 7;
+            this.btn_del.Text = "HAPUS";
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
+            // 
+            // tbl_on_users
+            // 
+            this.tbl_on_users.AllowUserToAddRows = false;
+            this.tbl_on_users.AllowUserToDeleteRows = false;
+            this.tbl_on_users.AllowUserToResizeColumns = false;
+            this.tbl_on_users.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.tbl_on_users.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tbl_on_users.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.tbl_on_users.ColumnHeadersHeight = 20;
+            this.tbl_on_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tbl_on_users.DefaultCellStyle = dataGridViewCellStyle3;
+            this.tbl_on_users.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_users.Location = new System.Drawing.Point(22, 294);
+            this.tbl_on_users.Name = "tbl_on_users";
+            this.tbl_on_users.ReadOnly = true;
+            this.tbl_on_users.RowHeadersVisible = false;
+            this.tbl_on_users.Size = new System.Drawing.Size(925, 394);
+            this.tbl_on_users.TabIndex = 6;
+            this.tbl_on_users.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_users.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.tbl_on_users.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.tbl_on_users.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.tbl_on_users.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.tbl_on_users.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_users.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_users.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.tbl_on_users.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.tbl_on_users.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbl_on_users.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.tbl_on_users.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.tbl_on_users.ThemeStyle.HeaderStyle.Height = 20;
+            this.tbl_on_users.ThemeStyle.ReadOnly = true;
+            this.tbl_on_users.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.tbl_on_users.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.tbl_on_users.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbl_on_users.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tbl_on_users.ThemeStyle.RowsStyle.Height = 22;
+            this.tbl_on_users.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.tbl_on_users.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.tbl_on_users.Click += new System.EventHandler(this.tbl_on_users_Click);
+            // 
+            // btn_upload
+            // 
+            this.btn_upload.BorderRadius = 15;
+            this.btn_upload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_upload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_upload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_upload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_upload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_upload.Font = new System.Drawing.Font("Mongolian Baiti", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upload.ForeColor = System.Drawing.Color.White;
+            this.btn_upload.Location = new System.Drawing.Point(774, 256);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(173, 32);
+            this.btn_upload.TabIndex = 5;
+            this.btn_upload.Text = "UPLOAD";
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click_1);
+            // 
+            // user_picture
+            // 
+            this.user_picture.FillColor = System.Drawing.Color.Silver;
+            this.user_picture.ImageRotate = 0F;
+            this.user_picture.Location = new System.Drawing.Point(774, 24);
+            this.user_picture.Name = "user_picture";
+            this.user_picture.Size = new System.Drawing.Size(173, 226);
+            this.user_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.user_picture.TabIndex = 4;
+            this.user_picture.TabStop = false;
+            // 
+            // user_role
+            // 
+            this.user_role.AutoCompleteCustomSource.AddRange(new string[] {
+            "Admin",
+            "Cashier"});
+            this.user_role.BackColor = System.Drawing.Color.Transparent;
+            this.user_role.BorderRadius = 15;
+            this.user_role.BorderThickness = 0;
+            this.user_role.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.user_role.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.user_role.FillColor = System.Drawing.Color.Silver;
+            this.user_role.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_role.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_role.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.user_role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.user_role.ItemHeight = 30;
+            this.user_role.Items.AddRange(new object[] {
+            "Cashier",
+            "Admin"});
+            this.user_role.Location = new System.Drawing.Point(386, 152);
+            this.user_role.Name = "user_role";
+            this.user_role.Size = new System.Drawing.Size(311, 36);
+            this.user_role.TabIndex = 3;
+            // 
+            // user_name
+            // 
+            this.user_name.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.user_name.BorderRadius = 15;
+            this.user_name.BorderThickness = 0;
+            this.user_name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.user_name.DefaultText = "";
+            this.user_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.user_name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.user_name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_name.FillColor = System.Drawing.Color.Silver;
+            this.user_name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name.ForeColor = System.Drawing.Color.White;
+            this.user_name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_name.Location = new System.Drawing.Point(386, 92);
+            this.user_name.Name = "user_name";
+            this.user_name.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.user_name.PlaceholderText = "Nama Lengkap";
+            this.user_name.SelectedText = "";
+            this.user_name.Size = new System.Drawing.Size(311, 42);
+            this.user_name.TabIndex = 2;
+            // 
+            // user_pass
+            // 
+            this.user_pass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.user_pass.BorderRadius = 15;
+            this.user_pass.BorderThickness = 0;
+            this.user_pass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.user_pass.DefaultText = "";
+            this.user_pass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.user_pass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.user_pass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_pass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_pass.FillColor = System.Drawing.Color.Silver;
+            this.user_pass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_pass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_pass.ForeColor = System.Drawing.Color.White;
+            this.user_pass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_pass.Location = new System.Drawing.Point(58, 152);
+            this.user_pass.Name = "user_pass";
+            this.user_pass.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.user_pass.PlaceholderText = "Password";
+            this.user_pass.SelectedText = "";
+            this.user_pass.Size = new System.Drawing.Size(311, 42);
+            this.user_pass.TabIndex = 1;
+            // 
+            // user_id
+            // 
+            this.user_id.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.user_id.BorderRadius = 15;
+            this.user_id.BorderThickness = 0;
+            this.user_id.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.user_id.DefaultText = "";
+            this.user_id.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.user_id.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.user_id.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_id.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.user_id.FillColor = System.Drawing.Color.Silver;
+            this.user_id.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_id.ForeColor = System.Drawing.Color.White;
+            this.user_id.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.user_id.Location = new System.Drawing.Point(58, 92);
+            this.user_id.Name = "user_id";
+            this.user_id.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.user_id.PlaceholderText = "Id";
+            this.user_id.SelectedText = "";
+            this.user_id.Size = new System.Drawing.Size(311, 42);
+            this.user_id.TabIndex = 0;
             // 
             // AdminDashboard
             // 
@@ -902,6 +1693,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(113)))));
             this.ClientSize = new System.Drawing.Size(1350, 772);
+            this.Controls.Add(this.users_panel);
+            this.Controls.Add(this.transaksi_panel);
             this.Controls.Add(this.produk_panel);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.dashboard_panel);
@@ -926,12 +1719,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.log)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produkstok_tbl)).EndInit();
             this.produk_panel.ResumeLayout(false);
             this.produk_panel.PerformLayout();
             this.dashboard_panel.ResumeLayout(false);
             this.dashboard_panel.PerformLayout();
+            this.transaksi_panel.ResumeLayout(false);
+            this.transaksi_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jml_barang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_on_transaksi)).EndInit();
+            this.users_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tbl_on_users)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -980,12 +1779,50 @@
         private Guna.UI2.WinForms.Guna2Button insert_btn;
         private Guna.UI2.WinForms.Guna2Button update_btn;
         private Guna.UI2.WinForms.Guna2DataGridView produkstok_tbl;
-        private Guna.UI2.WinForms.Guna2Button btn_upload;
         private Guna.UI2.WinForms.Guna2TextBox t_stok;
         private Guna.UI2.WinForms.Guna2TextBox t_hrg;
         private Guna.UI2.WinForms.Guna2TextBox t_nama;
-        private Guna.UI2.WinForms.Guna2PictureBox pictureBox;
         private Guna.UI2.WinForms.Guna2TextBox t_id;
         private Guna.UI2.WinForms.Guna2Panel dashboard_panel;
+        private Guna.UI2.WinForms.Guna2Panel transaksi_panel;
+        private System.Windows.Forms.Label labelsb;
+        private System.Windows.Forms.Label labeljml;
+        private System.Windows.Forms.Label labelidp;
+        private System.Windows.Forms.Label labelidt;
+        private System.Windows.Forms.Label labelid;
+        private Guna.UI2.WinForms.Guna2Button btn_hps;
+        private Guna.UI2.WinForms.Guna2Button btn_tmbh;
+        private Guna.UI2.WinForms.Guna2Button btn_upd;
+        private Guna.UI2.WinForms.Guna2TextBox t_sub;
+        private Guna.UI2.WinForms.Guna2TextBox t_jml;
+        private Guna.UI2.WinForms.Guna2TextBox t_idp;
+        private Guna.UI2.WinForms.Guna2TextBox t_idt;
+        private Guna.UI2.WinForms.Guna2TextBox t_idd;
+        private System.Windows.Forms.Label nama_produk;
+        private Guna.UI2.WinForms.Guna2TextBox t_bayar;
+        private Guna.UI2.WinForms.Guna2NumericUpDown jml_barang;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btn_tbl_transaksi;
+        private Guna.UI2.WinForms.Guna2Button btn_tbl_detail;
+        private Guna.UI2.WinForms.Guna2DataGridView tbl_on_transaksi;
+        private Guna.UI2.WinForms.Guna2Button btn_tbl_produk;
+        private System.Windows.Forms.Label tampil_harga;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Panel users_panel;
+        private Guna.UI2.WinForms.Guna2Button btn_ins;
+        private Guna.UI2.WinForms.Guna2Button btn_edt;
+        private Guna.UI2.WinForms.Guna2Button btn_del;
+        private Guna.UI2.WinForms.Guna2DataGridView tbl_on_users;
+        private Guna.UI2.WinForms.Guna2Button btn_upload;
+        private Guna.UI2.WinForms.Guna2PictureBox user_picture;
+        private Guna.UI2.WinForms.Guna2ComboBox user_role;
+        private Guna.UI2.WinForms.Guna2TextBox user_name;
+        private Guna.UI2.WinForms.Guna2TextBox user_pass;
+        private Guna.UI2.WinForms.Guna2TextBox user_id;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btn_admin;
+        private Guna.UI2.WinForms.Guna2Button btn_cashier;
     }
 }

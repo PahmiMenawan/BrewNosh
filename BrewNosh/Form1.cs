@@ -22,59 +22,11 @@ namespace BrewNosh
 
         SqlConnection conn = DatabaseHelper.GetConnection();
         SqlCommand cmd;
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void clear()
-        {
-            t_id.Text = "";
-            t_pw.Text = "";
-        }
-        private void btn_lgn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Registrasi kl = new Registrasi();
-            kl.Show();
-            this.Hide();
-        }
-
-        private void t_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            clear();
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        // ========== LOGIN ==========
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string id = t_id.Text;
@@ -134,5 +86,19 @@ namespace BrewNosh
                 MessageBox.Show("Password atau id salah!");
             }
         }
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+        public void clear()
+        {
+            t_id.Text = "";
+            t_pw.Text = "";
+        }
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        // ========= LOGIN ========== //
     }
 }

@@ -12,17 +12,13 @@ using System.Globalization;
 
 namespace BrewNosh
 {
-
-
     public partial class Dashboard : Form
     {
         private Timer timer;
         public Dashboard()
         {
             InitializeComponent();
-
         }
-
         SqlConnection conn = DatabaseHelper.GetConnection();
         SqlCommand cmd;
         private void Dashboard_Load(object sender, EventArgs e)
@@ -34,8 +30,7 @@ namespace BrewNosh
             load_product();
             getDate();
         }
-
-        // Table load START
+        // ========== TABLE LOAD ==========
         public void load_data()
         {
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -46,20 +41,17 @@ namespace BrewNosh
             master_table.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             master_table.DataSource = dt;
         }
-
         public void load_product()
         {
             cmd = new SqlCommand("SELECT Id_produk AS 'Product Id', nama_barang AS 'Nama Barang', harga_barang AS 'Harga Barang', stok FROM Produk", conn);
             master_table.Enabled = true;
             load_data();
         }
-
         public void load_detail()
         {
             cmd = new SqlCommand($"SELECT * FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru}", conn);
             master_table.Enabled = false;
             load_data();
-
         }
         public void load_transaksi()
         {
@@ -68,6 +60,10 @@ namespace BrewNosh
             load_data();
         }
         // NavBar
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            load_product();
+        }
         private void label2_Click_1(object sender, EventArgs e)
         {
             load_product();
@@ -76,25 +72,31 @@ namespace BrewNosh
         {
             load_detail();
         }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            load_detail();
+        }
         private void t_transaksi_Click(object sender, EventArgs e)
         {
             load_transaksi();
         }
-        // Table load END
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            load_transaksi();
+        }
+        // ========== TABLE LOAD ========== //
 
-
-        // Global Variables START
+        // Global Variables 
         int idTransaksiBaru;
         int pesanan = 0;
-        // Global Variables END
+        // Global Variables //
 
-        // Functions START
+        // ========== GLOBAL FUNCTIONS ==========
         public void getDate()
         {
             DateTime tanggalSekarang = DateTime.Now;
             label3.Text = tanggalSekarang.ToString("dd-MM-yyyy");
         }
-
         private void UpdateClock(object sender, EventArgs e)
         {
             t_jam.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -107,7 +109,6 @@ namespace BrewNosh
             idTransaksiBaru = Convert.ToInt32(cmd.ExecuteScalar());
             conn.Close();
         }
-
         public void add_detail()
         {
             string id = master_table.CurrentRow.Cells[0].Value.ToString();
@@ -118,7 +119,6 @@ namespace BrewNosh
             cmd.ExecuteNonQuery();
             conn.Close();
         }
-
         public void updateStock()
         {
             // Ambil ID produk dari baris yang sedang dipilih di master_table
@@ -141,71 +141,23 @@ namespace BrewNosh
             conn.Close();
             load_product();
         }
-        // Functions END
-        // Logout START
+        // ========== GLOBAL FUNCTIONS ========== //
+        // Logout
         private void t_logout_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Form form1 = new Form1();
             form1.Show();
             this.Hide();
         }
-
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Form form1 = new Form1();
             form1.Show();
             this.Hide();
 
         }
-        // Logout END
-        // Debug
-        public void doomsday_procedure()
-        {
-            cmd = new SqlCommand("TRUNCATE TABLE transaksi", conn);
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            cmd = new SqlCommand("TRUNCATE TABLE detail_transaksi", conn);
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            cmd = new SqlCommand("TRUNCATE TABLE produk", conn);
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-
-        }
-
-        public void letThereBeLight()
-        {
-            cmd = new SqlCommand("INSERT INTO produk (Id_produk, nama_barang, harga_barang, stok) VALUES " +
-                "('1', 'cappucino', '5000', '50'), " +
-                "('2', 'americano', '5000', '50'), " +
-                "('3', 'ice tea', '2500', '50'), " +
-                "('4', 'sandwich', '10000', '50'), " +
-                "('5', 'croissant', '15000', '50'), " +
-                "('6', 'indomie', '10000', '50'), " +
-                "('7', 'beef lasagna', '35000', '50'), " +
-                "('8', 'spaghetti', '50000', '50');", conn);
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            load_product();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            letThereBeLight();
-            load_data();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            doomsday_procedure();
-            load_data();
-        }
-        // Debug End
-
-        // Scenario START
+        // Logout //
+        // ========== SCENARIO ==========
         // Scenario - Search
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
@@ -315,13 +267,13 @@ namespace BrewNosh
         // Scenario - Pay Order
         private void t_bayar_TextChanged(object sender, EventArgs e)
         {
-            if(t_bayar.Text != "")
+            if (t_bayar.Text != "")
             {
-            cmd = new SqlCommand($"SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru};", conn);
-            conn.Open();
-            int harga = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-            int bayar = Convert.ToInt32(t_bayar.Text);
+                cmd = new SqlCommand($"SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru};", conn);
+                conn.Open();
+                int harga = Convert.ToInt32(cmd.ExecuteScalar());
+                conn.Close();
+                int bayar = Convert.ToInt32(t_bayar.Text);
 
                 int kembalian = bayar - harga;
                 l_kembalian.Text = kembalian.ToString("C", new CultureInfo("id-ID"));
@@ -340,65 +292,40 @@ namespace BrewNosh
         }
         private void pay_btn_Click(object sender, EventArgs e)
         {
-            if(t_bayar.Text != "")
+            if (t_bayar.Text != "")
             {
-            int uang = Convert.ToInt32(t_bayar.Text);
-            cmd = new SqlCommand($"SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru};", conn);
-            conn.Open();
-            int harga = Convert.ToInt32(cmd.ExecuteScalar());
-            conn.Close();
-            if (uang >= harga)
-            {
-                DialogResult result = MessageBox.Show("Konfirmasi pembayaran?", "Bayar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (result == DialogResult.Yes)
+                int uang = Convert.ToInt32(t_bayar.Text);
+                cmd = new SqlCommand($"SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru};", conn);
+                conn.Open();
+                int harga = Convert.ToInt32(cmd.ExecuteScalar());
+                conn.Close();
+                if (uang >= harga)
                 {
-                    cmd = new SqlCommand($"UPDATE Transaksi SET harga_total = (SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru}) WHERE id_transaksi = {idTransaksiBaru};", conn);
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                    t_harga.Text = "Rp.0";
-                    strk_name.Text = "";
-                    l_hrg.Text = "";
-                    t_bayar.Text = "";
-                    l_kembalian.Text = "";
+                    DialogResult result = MessageBox.Show("Konfirmasi pembayaran?", "Bayar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        cmd = new SqlCommand($"UPDATE Transaksi SET harga_total = (SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru}) WHERE id_transaksi = {idTransaksiBaru};", conn);
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                        t_harga.Text = "Rp.0";
+                        strk_name.Text = "";
+                        l_hrg.Text = "";
+                        t_bayar.Text = "";
+                        l_kembalian.Text = "";
                         MessageBox.Show("Transaksi selesai!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-            }
-            else
-            {
-                MessageBox.Show("Uang tidak cukup!", "Bayar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+                }
+                else
+                {
+                    MessageBox.Show("Uang tidak cukup!", "Bayar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
                 MessageBox.Show("Isi kolom bayar dengan benar!");
             }
         }
-
-        private void master_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            doomsday_procedure();
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            letThereBeLight();
-        }
-        // Scenario END
+        // ========== SCENARIO ========== //
     }
 }
