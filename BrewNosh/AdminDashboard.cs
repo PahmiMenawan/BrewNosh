@@ -197,7 +197,7 @@ namespace BrewNosh
         }
         public void Transaction()
         {
-            cmd = new SqlCommand("SELECT count(*) FROM Transaksi", conn);
+            cmd = new SqlCommand("SELECT COUNT(*) FROM Transaksi WHERE CAST(tanggal AS DATE) = CAST(GETDATE() AS DATE)", conn);
             conn.Open();
             int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
             conn.Close();
@@ -412,7 +412,6 @@ namespace BrewNosh
             chart1.Visible = true;
             log.Visible = false;
         }
-
         private void guna2Button5_Click(object sender, EventArgs e)
         {
             Tb_log();

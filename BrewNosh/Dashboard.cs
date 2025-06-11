@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using PdfSharp.Pdf;
+using PdfSharp.Fonts;
+using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
 
 namespace BrewNosh
 {
@@ -141,7 +145,68 @@ namespace BrewNosh
             conn.Close();
             load_product();
         }
+        private void ExportTextToPdf()
+        {
+            // ——————————————  
+            // Aktifkan Windows Fonts agar PlatformFontResolver otomatis
+            // mengenali Times New Roman, Arial, Courier New, dsb.
+            GlobalFontSettings.UseWindowsFontsUnderWindows = true;
+            // :contentReference[oaicite:0]{index=0}
+            // ——————————————  
+            string pesanan = strk_name.Text;
+            string harga = t_harga.Text;
+
+            // 1. Buat dokumen MigraDoc
+            var document = new Document();
+            // 2. Atur style default 'Normal' ke Times New Roman
+            var normal = document.Styles["Normal"];
+            normal.Font.Name = "Times New Roman";
+            normal.Font.Size = 12;
+            normal.ParagraphFormat.Alignment = ParagraphAlignment.Left;
+
+            // 3. Tambahkan section + paragraf
+            var section = document.AddSection();
+            // 1. Buat satu paragraph saja (satu baris)
+            var paragraph = section.AddParagraph();
+
+            // 2. Tambahkan tab stop di posisi X (misal 10 cm dari margin kiri)
+            paragraph.Format.TabStops.AddTabStop(Unit.FromCentimeter(10));
+            section.PageSetup.TopMargin = Unit.FromCentimeter(2);
+            section.PageSetup.BottomMargin = Unit.FromCentimeter(2);
+            section.AddParagraph("TERIMAKASIH TELAH BERBELANJA DI BREWNOSH");
+            section.AddParagraph("========================================");
+            section.AddParagraph(pesanan);
+            section.AddParagraph("========================================");
+            section.AddParagraph(harga);
+
+            // 4. Render PDF (gunakan ctor tanpa bool, karena Unicode selalu aktif)
+            var pdfRenderer = new PdfDocumentRenderer() { Document = document };
+            pdfRenderer.RenderDocument();
+
+            // 5. SaveFileDialog & simpan
+            using (var sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "PDF File|*.pdf";
+                sfd.FileName = "percobaan.pdf";
+                if (sfd.ShowDialog() != DialogResult.OK)
+                    return;
+
+                try
+                {
+                    pdfRenderer.PdfDocument.Save(sfd.FileName);
+                    MessageBox.Show("PDF berhasil disimpan di:\n" + sfd.FileName,
+                                    "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Gagal menyimpan PDF:\n" + ex.Message,
+                                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
         // ========== GLOBAL FUNCTIONS ========== //
+
         // Logout
         private void t_logout_Click(object sender, EventArgs e)
         {
@@ -157,6 +222,7 @@ namespace BrewNosh
 
         }
         // Logout //
+
         // ========== SCENARIO ==========
         // Scenario - Search
         private void txt_search_TextChanged(object sender, EventArgs e)
@@ -304,6 +370,7 @@ namespace BrewNosh
                     DialogResult result = MessageBox.Show("Konfirmasi pembayaran?", "Bayar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
+                        ExportTextToPdf();
                         cmd = new SqlCommand($"UPDATE Transaksi SET harga_total = (SELECT SUM(subtotal) FROM detail_transaksi WHERE id_transaksi = {idTransaksiBaru}) WHERE id_transaksi = {idTransaksiBaru};", conn);
                         conn.Open();
                         cmd.ExecuteNonQuery();
